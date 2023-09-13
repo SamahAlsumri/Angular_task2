@@ -1,0 +1,17 @@
+<!-- Your component's template -->
+<div [ngSwitch]="condition">
+  <div *ngSwitchCase="'case1'">
+    <!-- Content for case1 -->
+    <p>This is content for Case 1.</p>
+  </div>
+
+  <div *ngSwitchCase="'case2'">
+    <!-- Content for case2 -->
+    <p>This is content for Case 2.</p>
+  </div>
+
+  <div *ngSwitchDefault>
+    <!-- Default content when no case matches -->
+    <p>This is the default content.</p>
+  </div>
+</div>

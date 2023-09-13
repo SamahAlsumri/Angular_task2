@@ -1,0 +1,11 @@
+<div *ngIf="isConditionMet">
+  <!-- Content to display when isConditionMet is true -->
+  <p>This content will be displayed when the condition is met.</p>
+</div>
+
+<div *ngIf="!isConditionMet">
+  <!-- Content to display when isConditionMet is false -->
+  <p>This content will be displayed when the condition is not met.</p>
+</div>
+
+<router-outlet></router-outlet>

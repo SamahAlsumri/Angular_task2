@@ -1,0 +1,35 @@
+<section class="h-100 gradient-form" style="background-color: #d1e2ec;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-10">
+          <div class="card rounded-3 text-black">
+            <div class="row g-0">
+              <div class="col-lg-6">
+                <div class="card-body p-md-5 mx-md-4">
+  
+                  <div class="text-center">
+                    <h4 class="mt-1 mb-5 pb-1">Welcome To Student Page</h4>
+                  </div>
+                  <form>
+                    <div class="card-body">
+                        <h4 class="card-title">Students <span style="color: rgb(71, 35, 249);">{{ details }}</span></h4><br>
+                        <p class="card-text"><input type="text" (input)="onStudentNameChange($event)"
+                                placeholder="Enter student's name..."></p><br>
+                        <h5 *ngIf="studentName" class="card-title">Student's Name: <span style="color: rgb(189, 97, 239);">
+                            {{studentName }}</span></h5>
+                        <a href="#" class="btn btn-primary" routerLink="student">Go to student mark</a>
+                    </div>
+                  </form>
+  
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                <img src="assets/img/pp.jpg" alt="">
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
